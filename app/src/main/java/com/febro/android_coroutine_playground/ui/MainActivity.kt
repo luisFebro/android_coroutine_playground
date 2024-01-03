@@ -32,7 +32,7 @@ suspend fun coroutine(number: Int, delay: Long) {
     delay(delay)
     println("Coroutine $number has finished")
 }
-
+// this is a new modification, dude!
 // ASYNC AND AWAIT ALL TO RUN ALL COROUTINES AT ONCE
 suspend fun getUserFirstNames(userIds: List<String>):List<String> {
     val firstNames = mutableListOf<Deferred<String>>()
